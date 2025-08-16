@@ -1,0 +1,264 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "demo_user",
+      "email": "demo@smarttodos.app",
+      "first_name": "Demo",
+      "last_name": "User",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.category",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "name": "Work",
+      "color": "#3B82F6",
+      "description": "Work-related tasks and projects",
+      "usage_count": 15,
+      "created_by": 1,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.category",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "name": "Personal",
+      "color": "#10B981",
+      "description": "Personal tasks and activities",
+      "usage_count": 8,
+      "created_by": 1,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.category",
+    "pk": "550e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "name": "Health",
+      "color": "#EF4444",
+      "description": "Health and wellness related tasks",
+      "usage_count": 5,
+      "created_by": 1,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.category",
+    "pk": "550e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "name": "Learning",
+      "color": "#8B5CF6",
+      "description": "Educational and skill development tasks",
+      "usage_count": 3,
+      "created_by": 1,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.tag",
+    "pk": "550e8400-e29b-41d4-a716-446655440011",
+    "fields": {
+      "name": "urgent",
+      "usage_count": 12,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.tag",
+    "pk": "550e8400-e29b-41d4-a716-446655440012",
+    "fields": {
+      "name": "deadline",
+      "usage_count": 10,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.tag",
+    "pk": "550e8400-e29b-41d4-a716-446655440013",
+    "fields": {
+      "name": "important",
+      "usage_count": 8,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": "550e8400-e29b-41d4-a716-446655440021",
+    "fields": {
+      "title": "Complete Q4 project proposal",
+      "description": "Finalize the quarterly project proposal with budget estimates, timeline, and resource allocation for client presentation",
+      "category": "550e8400-e29b-41d4-a716-446655440001",
+      "priority": "high",
+      "status": "in_progress",
+      "deadline": "2024-01-15T17:00:00Z",
+      "estimated_duration": 180,
+      "ai_priority_score": 92.5,
+      "ai_confidence_score": 89.2,
+      "ai_reasoning": "High priority based on deadline proximity and client importance. Requires immediate attention due to project dependencies.",
+      "ai_enhanced_description": "Complete the quarterly project proposal including detailed budget estimates, comprehensive timeline with milestones, resource allocation plan, risk assessment, and stakeholder analysis for the upcoming client presentation meeting.",
+      "ai_suggested_tags": ["urgent", "deadline", "client", "proposal"],
+      "user": 1,
+      "created_at": "2024-01-10T09:00:00Z",
+      "updated_at": "2024-01-12T14:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": "550e8400-e29b-41d4-a716-446655440022",
+    "fields": {
+      "title": "Review team performance reports",
+      "description": "Go through quarterly performance reports and prepare feedback for team members",
+      "category": "550e8400-e29b-41d4-a716-446655440001",
+      "priority": "medium",
+      "status": "todo",
+      "deadline": "2024-01-20T16:00:00Z",
+      "estimated_duration": 120,
+      "ai_priority_score": 75.8,
+      "ai_confidence_score": 82.1,
+      "ai_reasoning": "Important for team development but has flexible timeline. Should be prioritized after urgent client work.",
+      "ai_enhanced_description": "Conduct thorough review of quarterly performance reports for all team members, identify areas for improvement, prepare constructive feedback, and schedule individual meetings for performance discussions.",
+      "ai_suggested_tags": ["review", "team", "feedback", "performance"],
+      "user": 1,
+      "created_at": "2024-01-11T10:15:00Z",
+      "updated_at": "2024-01-11T10:15:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": "550e8400-e29b-41d4-a716-446655440023",
+    "fields": {
+      "title": "Doctor appointment - annual checkup",
+      "description": "Annual health checkup with Dr. Smith at City Medical Center",
+      "category": "550e8400-e29b-41d4-a716-446655440003",
+      "priority": "urgent",
+      "status": "todo",
+      "deadline": "2024-01-14T15:00:00Z",
+      "estimated_duration": 60,
+      "ai_priority_score": 95.0,
+      "ai_confidence_score": 96.5,
+      "ai_reasoning": "Health appointment with fixed time slot. Cannot be rescheduled easily and is critical for preventive care.",
+      "ai_enhanced_description": "Annual comprehensive health checkup appointment with Dr. Smith at City Medical Center. Remember to bring insurance card, medication list, and prepare questions about health concerns.",
+      "ai_suggested_tags": ["health", "appointment", "urgent", "medical"],
+      "user": 1,
+      "created_at": "2024-01-12T08:00:00Z",
+      "updated_at": "2024-01-12T08:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": "550e8400-e29b-41d4-a716-446655440024",
+    "fields": {
+      "title": "Plan weekend hiking trip",
+      "description": "Research hiking trails and plan weekend outdoor activity",
+      "category": "550e8400-e29b-41d4-a716-446655440002",
+      "priority": "low",
+      "status": "todo",
+      "deadline": "2024-01-25T18:00:00Z",
+      "estimated_duration": 90,
+      "ai_priority_score": 45.2,
+      "ai_confidence_score": 78.3,
+      "ai_reasoning": "Leisure activity with flexible timeline. Good for work-life balance but not urgent compared to other commitments.",
+      "ai_enhanced_description": "Research suitable hiking trails within 2-hour drive, check weather conditions, prepare equipment list, book accommodations if needed, and coordinate with friends for weekend outdoor adventure.",
+      "ai_suggested_tags": ["leisure", "outdoor", "planning", "weekend"],
+      "user": 1,
+      "created_at": "2024-01-12T16:30:00Z",
+      "updated_at": "2024-01-12T16:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.contextentry",
+    "pk": "550e8400-e29b-41d4-a716-446655440031",
+    "fields": {
+      "content": "Client called about the Q4 proposal - they want to move the deadline up by 2 weeks because of budget approval meetings. This is urgent and affects the entire project timeline.",
+      "source": "email",
+      "user": 1,
+      "processed": true,
+      "ai_insights": ["deadline_change", "high_urgency", "project_impact"],
+      "extracted_keywords": ["deadline", "urgent", "project", "timeline", "budget", "approval"],
+      "sentiment_score": -0.2,
+      "urgency_score": 0.9,
+      "created_at": "2024-01-13T10:30:00Z",
+      "updated_at": "2024-01-13T11:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.contextentry",
+    "pk": "550e8400-e29b-41d4-a716-446655440032",
+    "fields": {
+      "content": "Reminder: Doctor appointment next Tuesday at 3pm. Don't forget to bring insurance card and list of current medications.",
+      "source": "notes",
+      "user": 1,
+      "processed": true,
+      "ai_insights": ["appointment_reminder", "health_task", "preparation_needed"],
+      "extracted_keywords": ["appointment", "Tuesday", "insurance", "medications", "doctor"],
+      "sentiment_score": 0.1,
+      "urgency_score": 0.7,
+      "created_at": "2024-01-13T14:15:00Z",
+      "updated_at": "2024-01-13T14:45:00Z"
+    }
+  },
+  {
+    "model": "tasks.contextentry",
+    "pk": "550e8400-e29b-41d4-a716-446655440033",
+    "fields": {
+      "content": "Team meeting went well today. Everyone is excited about the new project direction. Need to follow up on performance reviews by end of month.",
+      "source": "meeting",
+      "user": 1,
+      "processed": true,
+      "ai_insights": ["positive_meeting", "follow_up_required", "performance_review"],
+      "extracted_keywords": ["team", "meeting", "project", "performance", "reviews", "follow-up"],
+      "sentiment_score": 0.6,
+      "urgency_score": 0.4,
+      "created_at": "2024-01-12T16:45:00Z",
+      "updated_at": "2024-01-12T17:15:00Z"
+    }
+  },
+  {
+    "model": "tasks.productivitymetrics",
+    "pk": "550e8400-e29b-41d4-a716-446655440041",
+    "fields": {
+      "user": 1,
+      "date": "2024-01-12",
+      "tasks_completed": 3,
+      "tasks_created": 2,
+      "total_focus_time": 240,
+      "ai_suggestions_accepted": 2,
+      "ai_accuracy_score": 87.5,
+      "overall_productivity_score": 78.2,
+      "context_processing_score": 91.3,
+      "created_at": "2024-01-13T00:00:00Z",
+      "updated_at": "2024-01-13T00:00:00Z"
+    }
+  },
+  {
+    "model": "ai_engine.aiconfiguration",
+    "pk": "550e8400-e29b-41d4-a716-446655440051",
+    "fields": {
+      "user": 1,
+      "gemini_model": "gemini-pro",
+      "temperature": 0.7,
+      "max_tokens": 1000,
+      "auto_prioritization": true,
+      "auto_categorization": true,
+      "deadline_suggestions": true,
+      "context_analysis": true,
+      "min_confidence_threshold": 0.6,
+      "processing_frequency": "realtime",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]
